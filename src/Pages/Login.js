@@ -8,7 +8,7 @@ function Login() {
         <div>
             <h3 style = {{textAlign: 'center'}}>Welcome Back!</h3>
             <h1 style = {{textAlign: 'center'}}>Please, Log In</h1>
-            <Box
+            {/* <Box
             component="form"
             sx={{
                 '& > :not(style)': { m: 1, width: '25ch' },
@@ -16,9 +16,10 @@ function Login() {
             noValidate
             autoComplete="off"
             style={{alignSelf: 'center'}}
-            >
-            <TextField style = {{textAlign: 'center'}} label="Outlined secondary" color="secondary" focused />
-            </Box>
+            > */}
+            <TextField style = {{textAlign: 'center', position: 'absolute', left: '50%', top: '20%',
+            transform: 'translate(-50%, -50%)'}} label="Username" color="secondary" focused />
+            {/* </Box> */}
         </div>
     )
 }
