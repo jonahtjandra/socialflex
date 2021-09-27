@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 
 function Login() {
     return (
@@ -18,7 +18,11 @@ function Login() {
             style={{alignSelf: 'center'}}
             > */}
             <TextField style = {{textAlign: 'center', position: 'absolute', left: '50%', top: '20%',
-            transform: 'translate(-50%, -50%)'}} label="Username" color="secondary" focused />
+            transform: 'translate(-50%, -50%)'}} label="Username: "  focused />
+            <TextField style = {{textAlign: 'center', position: 'absolute', left: '50%', top: '30%',
+            transform: 'translate(-50%, -50%)'}} label="Password: " color="secondary" focused />
+            <Button variant="contained" style = {{textAlign: 'center', position: 'absolute', left: '50%', top: '40%',
+            transform: 'translate(-50%, -50%)'}} size="large">Submit</Button>
             {/* </Box> */}
         </div>
     )
